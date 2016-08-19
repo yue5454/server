@@ -15,8 +15,8 @@ class LoginAction extends Action {
 		{
 			$back["status"] = "ok";
 			$back["text"] = "登陆成功！";
-			cookie("Uname",$data["user_name"]);
-			cookie("Uid",$result["id"]);
+			cookie("uName",$data["user_name"]);
+			cookie("uId",$result["id"]);
 			echo json_encode($back);
 		}
 		else
